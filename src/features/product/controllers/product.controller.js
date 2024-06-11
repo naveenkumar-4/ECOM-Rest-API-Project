@@ -60,8 +60,8 @@ export default class ProductController {
     console.log(query);
     try {
       const userID = req.userID;
-      const productID = req.query.productID;
-      const rating = req.query.rating;
+      const productID = req.body.productID;
+      const rating = req.body.rating;
       // try{
       //   ProductModel.rateProduct(userID, productID, rating);
       // }catch(err){
