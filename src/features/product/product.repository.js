@@ -124,7 +124,7 @@ export default class ProductRepository {
       // 2. Add new entry
       await collection.updateOne(
         {
-          _id: new ObjectId(productID), 
+          _id: new ObjectId(productID),  
         },
         {
           $push: { ratings: { userID: new ObjectId(userID), rating } },
