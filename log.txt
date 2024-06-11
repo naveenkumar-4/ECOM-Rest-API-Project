@@ -1,0 +1,18 @@
+
+ Sun May 26 2024 16:27:29 GMT+0530 (India Standard Time)-/api/users/signIn-{"email":"customer@ecom.com","password":"Password1"}
+ Sun May 26 2024 16:27:55 GMT+0530 (India Standard Time)-/api/users/signUp-{"name":"Naveen Kumar","email":"gnaveenkumar1914@gmail.com","password":"Password1","type":"customer"}
+ Mon May 27 2024 14:23:07 GMT+0530 (India Standard Time)-/api/products/rate?userID=1&productID=1&rating=4.5-{}
+ Mon May 27 2024 14:23:26 GMT+0530 (India Standard Time)-/api/products/rate?userID=1&productID=1&rating=4.5-{}
+ Mon May 27 2024 14:24:12 GMT+0530 (India Standard Time)-/api/products/rate?userID=1&productID=1&rating=4-{}
+ Mon May 27 2024 14:26:38 GMT+0530 (India Standard Time)-/api/products/rate?userID=1&productID=1&rating=4-{}
+ Mon May 27 2024 14:28:46 GMT+0530 (India Standard Time)-/api/products/rate?userID=1&productID=1&rating=4-{}
+ Mon May 27 2024 14:29:29 GMT+0530 (India Standard Time)-/api/products/rate?userID=1&productID=11&rating=4-{}
+ Mon May 27 2024 14:29:29 GMT+0530 (India Standard Time)-Product not found
+ Mon May 27 2024 14:30:18 GMT+0530 (India Standard Time)-/api/products/rate?userID=1&productID=11&rating=4-{}
+ Mon May 27 2024 14:30:18 GMT+0530 (India Standard Time)-Cannot read properties of undefined (reading 'rating')
+ Mon May 27 2024 14:31:57 GMT+0530 (India Standard Time)-/api/products/rate?userID=1&productID=11&rating=4-{}
+ Mon May 27 2024 14:31:57 GMT+0530 (India Standard Time)-Cannot read properties of undefined (reading 'rating')
+ Mon May 27 2024 14:35:49 GMT+0530 (India Standard Time)-/api/products/rate?userID=1&productID=11&rating=4-{}
+ Mon May 27 2024 14:35:49 GMT+0530 (India Standard Time)-Cannot read properties of undefined (reading 'rating')
+ Mon May 27 2024 14:36:03 GMT+0530 (India Standard Time)-/api/products/rate?userID=1&productID=11&rating=4-{}
+ Mon May 27 2024 14:36:03 GMT+0530 (India Standard Time)-Product not found

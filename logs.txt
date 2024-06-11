@@ -1,0 +1,119 @@
+{"level":"info","message":"/api/user/register-{\"name\":\"Naveen Kumar\",\"email\":\"gnaveenkumar1914@gmail.com\",\"password\":\"Naveen@60\"}","service":"request-logging"}
+{"level":"info","message":"/api/users-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/signIn-{\"email\":\"customer@ecom.com\",\"password\":\"Password1\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signUp-{\"name\":\"Naveen Kumar\",\"email\":\"gnaveenkumar1914@gmail.com\",\"password\":\"Password1\",\"type\":\"customer\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signIn-{\"email\":\"customer@ecom.com\",\"password\":\"Password1\"}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=3&productID=1&rating=4.5-{}","service":"request-logging"}
+{"level":"info","message":"/api/products-{}","service":"request-logging"}
+{"level":"info","message":"/api/products-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=3&rating=4.5-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?rating=4.5-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=3&productID=10&rating=4.5-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=3&productID=10&rating=4.5-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=1&productID=10&rating=4.5-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/signIn-{\"email\":\"customer@ecom.com\",\"password\":\"Password1\"}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=1&productID=10&rating=4.5-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=1&productID=10&rating=4.5-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=1&productID=10&rating=4.5-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=1&productID=10&rating=4.5-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=1&productID=10&rating=4.5-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=1&productID=1&rating=4.5-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=1&productID=1&rating=4.5-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=1&productID=1&rating=4.5-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=1&productID=1&rating=4.5-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=1&productID=1&rating=4.5-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=1&productID=1&rating=4.5-{}","service":"request-logging"}
+{"level":"error","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=1&productID=1&rating=4.5-{}","service":"request-logging"}
+{"level":"info","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=1&productID=1&rating=4.5-{}","service":"request-logging"}
+{"level":"info","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=1&productID=1&rating=4.5-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/signIn-{\"email\":\"customer@ecom.com\",\"password\":\"Password1\"}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=1&productID=1&rating=4.5-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=1&productID=11&rating=4-{}","service":"request-logging"}
+{"level":"info","message":"Product not found","service":"request-logging"}
+{"level":"info","message":"/api/users/signIn-{\"email\":\"customer@ecom.com\",\"password\":\"Password1\"}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=1&productID=11&rating=4-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=1&productID=11&rating=4-{}","service":"request-logging"}
+{"level":"info","message":"Product not found","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=10&productID=1&rating=4-{}","service":"request-logging"}
+{"level":"info","message":"User not found","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=1&productID=1&rating=4-{}","service":"request-logging"}
+{"level":"info","message":"Cannot read properties of undefined (reading 'rating')","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=11&productID=1&rating=4-{}","service":"request-logging"}
+{"level":"info","message":"consol is not defined","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=11&productID=1&rating=4-{}","service":"request-logging"}
+{"level":"info","message":"Cannot access 'query' before initialization","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=11&productID=1&rating=4-{}","service":"request-logging"}
+{"level":"info","message":"Cannot access 'query' before initialization","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?userID=11&productID=1&rating=4-{}","service":"request-logging"}
+{"level":"info","message":"User not found","service":"request-logging"}
+{"level":"info","message":"/api/users/signUp-{\"name\":\"Naveen Kumar\",\"email\":\"gnaveenkumar1914@gmail.com\",\"password\":\"Password1\",\"type\":\"customer\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signUp-{\"name\":\"Naveen Kumar\",\"email\":\"gnaveenkumar1914@gmail.com\",\"password\":\"Password1\",\"type\":\"customer\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signUp-{\"name\":\"Naveen Kumar 2\",\"email\":\"gnaveenkumar19140@gmail.com\",\"password\":\"Password2\",\"type\":\"customer2\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signUp-{\"name\":\"Naveen Kumar 2\",\"email\":\"gnaveenkumar19140@gmail.com\",\"password\":\"Password2\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signUp-{\"name\":\"Naveen Kumar 2\",\"email\":\"gnaveenkumar19140@gmail.com\",\"password\":\"Password2\"}","service":"request-logging"}
+{"level":"info","message":"Cannot set headers after they are sent to the client","service":"request-logging"}
+{"level":"info","message":"/api/users/signUp-{\"name\":\"Naveen Kumar 2\",\"email\":\"gnaveenkumar19140@gmail.com\",\"password\":\"Password2\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signUp-{\"name\":\"Naveen Kumar 2\",\"email\":\"gnaveenkumar19140@gmail.com\",\"password\":\"Password2\"}","service":"request-logging"}
+{"level":"info","message":"All fileds are mandatory","service":"request-logging"}
+{"level":"info","message":"/api/users/signUp-{\"name\":\"Naveen Kumar 2\",\"email\":\"gnaveenkumar19140@gmail.com\",\"password\":\"Password2\"}","service":"request-logging"}
+{"level":"info","message":"All fileds are mandatory","service":"request-logging"}
+{"level":"info","message":"/api/users/signUp-{\"name\":\"Naveen Kumar 2\",\"email\":\"gnaveenkumar19140@gmail.com\",\"password\":\"Password2\",\"type\":\"Customer\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signUp-{\"name\":\"Naveen Kumar\",\"email\":\"gnaveenkumar191400@gmail.com\",\"password\":\"Password3\",\"type\":\"Customer23\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signUp-{\"name\":\"Naveen Kumar\",\"email\":\"gnaveenkumar191400@gmail.com\",\"password\":\"Password3\"}","service":"request-logging"}
+{"level":"info","message":"All fileds are mandatory","service":"request-logging"}
+{"level":"info","message":"/api/users/signUp-{\"name\":\"Naveen Kumar\",\"email\":\"gnaveenkumar191400@gmail.com\",\"password\":\"Password3\"}","service":"request-logging"}
+{"level":"info","message":"All fileds are mandatory","service":"request-logging"}
+{"level":"info","message":"/api/users/signUp-{\"name\":\"Naveen Kumar\",\"email\":\"gnaveenkumar191400@gmail.com\",\"password\":\"Password3\"}","service":"request-logging"}
+{"level":"info","message":"All fileds are mandatory","service":"request-logging"}
+{"level":"info","message":"/api/users/signUp-{\"name\":\"Naveen Kumar\",\"email\":\"gnaveenkumar191400@gmail.com\",\"password\":\"Password3\",\"type\":\"customer\"}","service":"request-logging"}
+{"level":"info","message":"Cannot read properties of undefined (reading 'userRepository')","service":"request-logging"}
+{"level":"info","message":"/api/users/signUp-{\"name\":\"Naveen Kumar\",\"email\":\"gnaveenkumar191400@gmail.com\",\"password\":\"Password3\",\"type\":\"customer\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signUp-{\"name\":\"Naveen Kumar\",\"email\":\"gnaveenkumar191400@gmail.com\",\"password\":\"Password3\",\"type\":\"Seller 1\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signIn-{\"email\":\"gnaveenkumar191400@gmail.com\",\"password\":\"Password3\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signIn-{\"email\":\"gnaveenkumar191400@gmail.com\",\"password\":\"Password\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signIn-{\"email\":\"gnaveenkumar191400@gmail.com\",\"password\":\"Passw\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"Naveen Kumar\",\"email\":\"gnaveenkumar191400@gmail.com\",\"password\":\"Password3\",\"type\":\"Seller 1\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"Naveen Kumar\",\"email\":\"gnaveenkumar1914@gmail.com\",\"password\":\"Password\",\"type\":\"Seller 1\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"Varun Kumar\",\"email\":\"gvarunkumar1914@gmail.com\",\"password\":\"Password123\",\"type\":\"Seller1\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"Varun Kumar\",\"email\":\"gvarunkumar1914@gmail.com\",\"password\":\"VarunKumar@560\",\"type\":\"Seller1\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"Varun Kumar\",\"email\":\"gvarunkumar1914@gmail.com\",\"password\":\"VarunKumar@560\",\"type\":\"Seller1\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"Varun Kumar\",\"email\":\"gvarunkumar1914@gmail.com\",\"password\":\"VarunKumar@560\",\"type\":\"Seller1\"}","service":"request-logging"}
+{"level":"info","message":"/api/products/-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"Areef Khan\",\"email\":\"Areef1914@gmail.com\",\"password\":\"Areef560\",\"type\":\"Seller1\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"Areef Khan\",\"email\":\"Areef1914@gmail.com\",\"password\":\"Areef560\",\"type\":\"Seller1\"}","service":"request-logging"}
+{"level":"info","message":"/api/products/-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/-{}","service":"request-logging"}
+{"level":"info","message":"/api/products-{}","service":"request-logging"}
+{"level":"info","message":"/api/products-{}","service":"request-logging"}
+{"level":"info","message":"/api/products-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/6662d5e7262ac501147ee78c-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/6662d5e7262ac501147ee78c-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/6662d5e7262ac501147ee78c-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/6662d5e7262ac501147ee78c-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/filter?minPrice=10&maxPrice=20&category=Category1-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/filter?minPrice=10&maxPrice=20&category=Category1-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/filter?minPrice=10&maxPrice=20&category=Category1-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/filter?minPrice=10&maxPrice=20&category=Category1-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/filter?minPrice=10&maxPrice=20&category=Category1-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/filter?minPrice=10&maxPrice=20&category=Category1-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/filter?minPrice=9000&maxPrice=20&category=Category1-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/filter?minPrice=9000-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?rating=4&productID=6666e7d46e7ec8397913a3e3-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?rating=4&productID=6666e7d46e7ec8397913a3e3-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?rating=4&productID=6666e7d46e7ec8397913a3e3-{}","service":"request-logging"}
+{"level":"info","message":"this.productRepository.rateProduct is not a function","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?rating=4&productID=6666e7d46e7ec8397913a3e3-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?rating=4&productID=6666e7d46e7ec8397913a3e3-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate?rating=4&productID=6666e7d46e7ec8397913a3e3-{}","service":"request-logging"}
