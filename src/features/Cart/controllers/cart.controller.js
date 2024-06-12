@@ -1,27 +1,46 @@
 import CartModel from "../cart.model.js";
+import CartRepository from "../cart.repository.js";
 
-export default class CartController{
-
-    add(req, res){
-        const {productID, quantity} = req.query;
-        const userID = req.userID;
-        CartModel.add(productID, userID, quantity)
-        res.status(201).send("Cart is Updated");
-    } 
-
-    get(req, res){
-        const userID = req.userID;
-        const items = CartModel.get(userID);
-        return res.status(200).send(items);
+export default class CartController {
+  constructor() {
+    this.cartRepository = new CartRepository();
+  }
+  async add(req, res) {
+    try {
+      // const {productID, quantity} = req.query;
+      const { productID, quantity } = req.body;
+      const userID = req.userID;
+      await this.cartRepository.add(productID, userID, quantity);
+      res.status(201).send("Cart is Updated");
+    } catch (err) {
+      console.log(err);
+      return res.status(500).send("Something went wrong");
     }
+  }
 
-    delete(req, res){
-        const  userID = req.userID;
-        const cartItemID = req.params.id;
-        const error = CartModel.delete(cartItemID, userID);
-        if(!error){
-            return res.status(404).send(error);
-        }
-        return res.status(200).send("Cart Item is removed")
+  async get(req, res) {
+    try {
+      const userID = req.userID;
+      const items = await this.cartRepository.get(userID);
+      return res.status(200).send(items);
+    } catch (err) {
+      console.log(err);
+      return res.status(500).send("Something went wrong");
     }
+  }
+
+  async delete(req, res) {
+    try {
+      const userID = req.userID;
+      const cartItemID = req.params.id;
+      const isDeleted = await this.cartRepository.delete(userID, cartItemID);
+      if (!isDeleted) {
+        return res.status(404).send("Item not found");
+      }
+      return res.status(200).send("Cart Item is removed");
+    } catch (err) {
+      console.log(err);
+      return res.status(500).send("Something went wrong");
+    }
+  }
 }

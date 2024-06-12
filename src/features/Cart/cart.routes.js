@@ -12,9 +12,15 @@ const cartRouter = express.Router();
 const cartController = new CartController();
  
 // All the paths to controller methods
-cartRouter.delete('/:id', cartController.delete)
-cartRouter.post('/', cartController.add)
-cartRouter.get("/", cartController.get);
+cartRouter.delete('/:id', (req, res, next)=>{
+    cartController.delete(req, res, next);
+})
+cartRouter.post('/', (req, res, next)=>{
+    cartController.add(req, res, next);
+})
+cartRouter.get("/", (req, res, next)=>{
+    cartController.get(req, res, next);
+});
 
 
 
