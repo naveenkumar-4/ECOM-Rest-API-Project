@@ -10,11 +10,27 @@ export default class CartRepository {
     try {
       const db = getDB();
       const collection = db.collection(this.collection);
-      await collection.insertOne({
-        productID: new ObjectId(productID),
-        userID: new ObjectId(userID),
-        quantity,
-      });
+      // find the document
+      // Either insert or update
+
+      // Insertion.
+      // await collection.insertOne({
+      //   productID: new ObjectId(productID),
+      //   userID: new ObjectId(userID),
+      //   quantity,
+      // });
+      await collection.updateOne(
+        {
+          productID: new ObjectId(productID),
+          userID: new ObjectId(userID),
+        },
+        {
+          $inc: { quantity: quantity },
+        },
+        {
+          upsert: true,
+        }
+      );
     } catch (err) {
       console.log(err);
       throw new ApplicationHandler("Something went wrong with database", 500);
@@ -35,7 +51,7 @@ export default class CartRepository {
       const db = getDB();
       const collection = db.collection(this.collection);
       const result = await collection.deleteOne({
-        userID:new ObjectId(userID),
+        userID: new ObjectId(userID),
         _id: new ObjectId(cartID),
       });
       return result.deletedCount > 0;

@@ -131,3 +131,8 @@
 {"level":"info","message":"/api/cartItems-{}","service":"request-logging"}
 {"level":"info","message":"/api/cartItems-{}","service":"request-logging"}
 {"level":"info","message":"/api/cartItems/6669af12680ecafa3d23a111-{}","service":"request-logging"}
+{"level":"info","message":"/api/cartItems-{\"productID\":\"6666e7d46e7ec8397913a3e3\",\"quantity\":2}","service":"request-logging"}
+{"level":"info","message":"/api/cartItems-{\"productID\":\"6669b93aefa3976e6f206685\",\"quantity\":2}","service":"request-logging"}
+{"level":"info","message":"/api/cartItems-{\"productID\":\"6669b93aefa3976e6f206685\",\"quantity\":2}","service":"request-logging"}
+{"level":"info","message":"/api/cartItems-{\"productID\":\"6666e7d46e7ec8397913a3e3\",\"quantity\":10}","service":"request-logging"}
+{"level":"info","message":"/api/cartItems-{\"productID\":\"6662d5e7262ac501147ee78c\",\"quantity\":10}","service":"request-logging"}
