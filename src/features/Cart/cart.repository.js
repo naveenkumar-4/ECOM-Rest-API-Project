@@ -4,12 +4,14 @@ import { getDB } from "../../config/mongodb.js";
 
 export default class CartRepository {
   constructor() {
-    this.collection = "Cart";
+    this.collection = "cartItems";
   }
   async add(productID, userID, quantity) {
     try {
       const db = getDB();
       const collection = db.collection(this.collection);
+      const id = await this.getNextCounter(db);
+      console.log(`${typeof id}`);
       // find the document
       // Either insert or update
 
@@ -25,6 +27,7 @@ export default class CartRepository {
           userID: new ObjectId(userID),
         },
         {
+          $setOnInsert: { _id:id },
           $inc: { quantity: quantity },
         },
         {
@@ -59,5 +62,18 @@ export default class CartRepository {
       console.log(err);
       throw new ApplicationHandler("Something went wrong with database", 500);
     }
+  }
+
+  async getNextCounter(db) {
+    const resultDocument = await db
+      .collection("counters")
+      .findOneAndUpdate(
+        { _id: "cartItemId" },
+        { $inc: { value: 1 } },
+        { returnDocument: "after" }
+      );
+    console.log(resultDocument);
+    console.log(`resultDocument value : ${resultDocument.value}`);
+    return resultDocument.value;
   }
 }
