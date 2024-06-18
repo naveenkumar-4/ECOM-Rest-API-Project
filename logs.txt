@@ -152,3 +152,7 @@
 {"level":"info","message":"/api/cartItems-{\"productID\":\"6666e7d46e7ec8397913a3e3\",\"quantity\":4}","service":"request-logging"}
 {"level":"info","message":"/api/cartItems-{\"productID\":\"6666e7d46e7ec8397913a3e3\",\"quantity\":4}","service":"request-logging"}
 {"level":"info","message":"/api/cartItems-{\"productID\":\"6662d5e7262ac501147ee78c\",\"quantity\":4}","service":"request-logging"}
+{"level":"info","message":"/api/products/filter?minPrice=9000*categories=[%27Cat1%27,%20%27Cat2%27]-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/filter?minPrice=9000&categories=[%27Cat1%27,%20%27Cat2%27]-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/filter?minPrice=9000&categories=[%27Cat1%27,%20%27Cat2%27]-{}","service":"request-logging"}
+{"level":"info","message":"/api/products/filter?minPrice=9000&categories=[%27Cat1%27,%20%27Cat2%27]-{}","service":"request-logging"}

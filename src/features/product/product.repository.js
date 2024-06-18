@@ -41,7 +41,7 @@ export default class ProductRepository {
     }
   }
 
-  async filterProducts(minPrice, maxPrice, category) {
+  async filterProducts(minPrice, categories) {
     try {
       const db = getDB();
       const collection = db.collection(this.collection);
@@ -49,16 +49,25 @@ export default class ProductRepository {
       if (minPrice) {
         filterExpression.price = { $gte: parseFloat(minPrice) };
       }
-      if (maxPrice) {
-        filterExpression.price = {
-          ...filterExpression.price,
-          $lte: parseFloat(maxPrice),
+      // if (maxPrice) {
+      //   filterExpression.price = {
+      //     ...filterExpression.price,
+      //     $lte: parseFloat(maxPrice),
+      //   };
+      // }
+
+      // ['Cat1', 'Cat2']
+      categories = JSON.parse(categories.replace(/'/g, '"'));
+      if (categories) {
+        filterExpression = {
+          $or: [{ category: { $in: categories } }, filterExpression],
         };
+        // filterExpression.category = category;
       }
-      if (category) {
-        filterExpression.category = category;
-      }
-      return collection.find(filterExpression).toArray();
+      return collection
+        .find(filterExpression)
+        .project({ _id: 0, name: 1, price: 1, ratings: 1 })
+        .toArray();
     } catch (err) {
       console.log(err);
       throw new ApplicationHandler("Something Went Wrong with dataBase", 500);
@@ -124,12 +133,30 @@ export default class ProductRepository {
       // 2. Add new entry
       await collection.updateOne(
         {
-          _id: new ObjectId(productID),  
+          _id: new ObjectId(productID),
         },
         {
           $push: { ratings: { userID: new ObjectId(userID), rating } },
         }
       );
+    } catch (err) {
+      console.log(err);
+      throw new ApplicationHandler("Something Went Wrong with dataBase", 500);
+    }
+  }
+
+  async averageProductPricePerCategory() {
+    try {
+      const db = getDB();
+      return await db.collection(this.collection).aggregate([
+        // Stage1: Get Average price per category
+        {
+          $group: {
+            _id: "$category",
+            averagePrice:{$avg: "$price"}
+          },
+        },
+      ]).toArray();
     } catch (err) {
       console.log(err);
       throw new ApplicationHandler("Something Went Wrong with dataBase", 500);

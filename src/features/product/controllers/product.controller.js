@@ -83,14 +83,23 @@ export default class ProductController {
     try {
       // fetching query Parameters
       const minPrice = req.query.minPrice;
-      const maxPrice = req.query.maxPrice;
-      const category = req.query.category;
+      // const maxPrice = req.query.maxPrice;
+      const categories = req.query.categories;
       const result = await this.productRepository.filterProducts(
         minPrice,
-        maxPrice,
-        category
+        categories
       );
-      console.log(result)
+      console.log(result);
+      res.status(200).send(result);
+    } catch (err) {
+      console.log(err);
+      return res.status(500).send("Something Went Wrong");
+    }
+  }
+
+  async averagePrice(req, res, next) {
+    try {
+      const result = await this.productRepository.averageProductPricePerCategory();
       res.status(200).send(result);
     } catch (err) {
       console.log(err);
