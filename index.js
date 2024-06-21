@@ -1,8 +1,7 @@
-import './env.js'
+import "./env.js";
 import express from "express";
 import swagger from "swagger-ui-express";
 import cors from "cors";
-
 
 import bodyParser from "body-parser";
 import ProductRouter from "./src/features/product/product.routes.js";
@@ -13,16 +12,14 @@ import loggerMiddleware from "./src/middlewares/logger.middleware.js";
 import cartRouter from "./src/features/Cart/cart.routes.js";
 import { logger } from "./src/middlewares/logger.middleware.js";
 import ApplicationHandler from "./src/Error-Handler/applicationError.js";
+import orderRouter from "./src/features/Order/order.routes.js";
 
 // import { log } from "./src/middlewares/logger.middleware.js";
 
 import apiDocs from "./swagger.json" assert { type: "json" };
 
-
-
 // Create Server
 export const app = express();
-
 
 // CORS Policy Configuration
 var corsOptions = {
@@ -50,6 +47,7 @@ app.use(express.json());
 // For all requests related to product, redirect to product routes.
 app.use("/api-docs", swagger.serve, swagger.setup(apiDocs));
 app.use(loggerMiddleware);
+app.use("/api/orders", jwtAuth, orderRouter);
 app.use("/api/products", jwtAuth, ProductRouter);
 app.use("/api/users", userRouter);
 app.use("/api/cartItems", jwtAuth, cartRouter);
