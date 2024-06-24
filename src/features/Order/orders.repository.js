@@ -3,7 +3,6 @@ import { getDB } from "../../config/mongodb.js";
 import { getClient } from "../../config/mongodb.js";
 import OrderModel from "./orders.model.js";
 import ApplicationHandler from "../../Error-Handler/applicationError.js";
-import { cli } from "winston/lib/winston/config/index.js";
 
 export default class OrderRepository {
   constructor() {
