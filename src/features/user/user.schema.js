@@ -6,3 +6,4 @@ export const userSchema = new mongoose.Schema({
   password: String,
   type: { type: String, enum: ["Customer", "Seller"] },
 });
+ 

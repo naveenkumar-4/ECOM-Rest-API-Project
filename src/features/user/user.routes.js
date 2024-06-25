@@ -12,8 +12,8 @@ const userController = new UserController();
 // All the paths to controller methods
 userRouter.get("/", userController.getAllUser);
 // userRouter.post('/signin', userController.signUp);
-userRouter.post("/signup", (req, res) => {
-  userController.signUp(req, res);
+userRouter.post("/signup", (req, res, next) => {
+  userController.signUp(req, res, next);
 });
 // userRouter.post("/signin", userController.signIn);
 userRouter.post("/signin", (req, res) => {

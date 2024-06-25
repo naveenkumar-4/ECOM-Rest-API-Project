@@ -176,3 +176,11 @@
 {"level":"info","message":"/api/orders-{}","service":"request-logging"}
 {"level":"info","message":"/api/orders-{}","service":"request-logging"}
 {"level":"info","message":"/api/orders-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"Areef Khan\",\"email\":\"Areef1914@gmail.com\",\"password\":\"Areef560\",\"type\":\"Seller1\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"Areef Khan\",\"email\":\"Areef1914@gmail.com\",\"password\":\"Areef560\",\"type\":\"Seller1\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"Areef Khan\",\"email\":\"Areef1914@gmail.com\",\"password\":\"Areef560\",\"type\":\"Seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"Venkatesh\",\"email\":\"Venky@gmail.com\",\"password\":\"Venky560\",\"type\":\"Seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"Vikky\",\"email\":\"Vikky@gmail.com\",\"password\":\"Vikky560\",\"type\":\"Customer\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"Vikky\",\"email\":\"Vikky@gmail.com\",\"password\":\"Vikky560\",\"type\":\"Customer\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"Vikky\",\"email\":\"Vikky@gmail.com\",\"password\":\"Vikky560\",\"type\":\"Customer\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"Vikky\",\"email\":\"Vikky@gmail.com\",\"password\":\"Vikky560\",\"type\":\"Customer\"}","service":"request-logging"}
