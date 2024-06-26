@@ -17,6 +17,7 @@ import orderRouter from "./src/features/Order/order.routes.js";
 // import { log } from "./src/middlewares/logger.middleware.js";
 
 import apiDocs from "./swagger.json" assert { type: "json" };
+import mongoose from "mongoose";
 
 // Create Server
 export const app = express();
@@ -62,6 +63,9 @@ app.use((err, req, res, next) => {
   // if (res.headersSent) {
   //   return next(err);
   // }
+  if (err instanceof mongoose.Error.ValidationError) {
+    res.status(401).send(err.message);
+  }
   if (err instanceof ApplicationHandler) {
     res.status(err.code).send(err.message);
   }

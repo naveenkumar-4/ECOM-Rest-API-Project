@@ -189,3 +189,15 @@
 {"level":"info","message":"/api/users/resetPassword-{\"newPassword\":\"Gootle@me\"}","service":"request-logging"}
 {"level":"info","message":"/api/users/resetPassword-{\"newPassword\":\"Gootle@me\"}","service":"request-logging"}
 {"level":"info","message":"/api/users/resetPassword-{\"newPassword\":\"Gootle@me\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"dummy\",\"email\":\"dummy@gmail.com\",\"password\":\"Vikky560\",\"type\":\"Customer\"}","service":"request-logging"}
+{"level":"info","message":"hashedPassword is not defined","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"dummy\",\"email\":\"dummy@gmail.com\",\"password\":\"Vikky560\",\"type\":\"Customer\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"dummy\",\"email\":\"dummy@gmail.com\",\"password\":\"Vikky@560\",\"type\":\"Customer\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"dummy\",\"email\":\"dummy@gmail.com\",\"password\":\"Vikky@560\",\"type\":\"Customer\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"dummy\",\"email\":\"dummy@gmail.com\",\"password\":\"Vikky@560\",\"type\":\"Customer\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"dummy\",\"email\":\"dummy@gmail.com\",\"password\":\"Vikky@560\",\"type\":\"Customer\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"dummy1\",\"email\":\"dummy1@gmail.com\",\"password\":\"Vi@560\",\"type\":\"Customer\"}","service":"request-logging"}
+{"level":"info","message":"User validation failed: password: Password shold be between 8-12 characters and have a special character","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"dummy1\",\"email\":\"dummy1@gmail.com\",\"password\":\"Vi@560\",\"type\":\"Customer\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"dummy1\",\"email\":\"dummy1@gmail.com\",\"password\":\"Vi@560\",\"type\":\"Customer\"}","service":"request-logging"}
+{"level":"info","message":"User validation failed: password: Password shold be between 8-12 characters and have a special character","service":"request-logging"}

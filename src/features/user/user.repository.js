@@ -8,12 +8,11 @@ export default class UserRepository {
   async resetPassword(userID, hashedPassword) {
     try {
       let user = await UserModel.findById(userID);
-      if(user){
-
+      if (user) {
         user.password = hashedPassword;
         user.save();
-      }else{
-        throw new Error("No such user found")
+      } else {
+        throw new Error("No such user found");
       }
     } catch (err) {
       console.log(err);
@@ -28,7 +27,12 @@ export default class UserRepository {
       return newUser;
     } catch (err) {
       console.log(err);
-      throw new ApplicationHandler("Something went wrong with dataBase");
+      if (err instanceof mongoose.Error.ValidationError) {
+        throw err;
+      } else {
+        console.log(err);
+        throw new ApplicationHandler("Something went wrong with dataBase");
+      }
     }
   }
 
@@ -36,8 +40,13 @@ export default class UserRepository {
     try {
       return await UserModel.findOne({ email, password });
     } catch (err) {
-      console.log(err);
-      throw new ApplicationHandler("Something went wrong with dataBase");
+      if (err instanceof mongoose.Error.ValidationError) {
+        console.log(err);
+        throw err;
+      } else {
+        console.log(err);
+        throw new ApplicationHandler("Something went wrong with dataBase");
+      }
     }
   }
 

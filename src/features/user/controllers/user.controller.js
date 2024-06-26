@@ -41,9 +41,9 @@ export default class UserController {
         // res.status(401).send("All fields are mandatory")
         throw new ApplicationHandler("All fileds are mandatory", 401);
       }
-      const hashedPassword = await bcrypt.hash(password, 12);
-      console.log(hashedPassword);
-      const user = new UserModel(name, email, hashedPassword, type);
+      // const hashedPassword = await bcrypt.hash(password, 12);
+      // console.log(hashedPassword);
+      const user = new UserModel(name, email, password, type);
       await this.userRepository.signUp(user);
       res.status(201).send(user);
     } catch (err) {
