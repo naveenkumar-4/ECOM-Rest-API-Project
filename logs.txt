@@ -184,3 +184,8 @@
 {"level":"info","message":"/api/users/signup-{\"name\":\"Vikky\",\"email\":\"Vikky@gmail.com\",\"password\":\"Vikky560\",\"type\":\"Customer\"}","service":"request-logging"}
 {"level":"info","message":"/api/users/signup-{\"name\":\"Vikky\",\"email\":\"Vikky@gmail.com\",\"password\":\"Vikky560\",\"type\":\"Customer\"}","service":"request-logging"}
 {"level":"info","message":"/api/users/signup-{\"name\":\"Vikky\",\"email\":\"Vikky@gmail.com\",\"password\":\"Vikky560\",\"type\":\"Customer\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/resetPassword-{\"newPassword\":\"Gootle@me\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/resetPassword-{\"newPassword\":\"Gootle@me\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/resetPassword-{\"newPassword\":\"Gootle@me\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/resetPassword-{\"newPassword\":\"Gootle@me\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/resetPassword-{\"newPassword\":\"Gootle@me\"}","service":"request-logging"}
