@@ -20,14 +20,14 @@ export default class ProductController {
 
   async addProduct(req, res) {
     try {
-      const { name, price, sizes } = req.body;
+      const { name, price, sizes, categories, description } = req.body;
       const newProduct = new ProductModel(
         name,
-        null,
+        description,
         parseFloat(price),
-        req.file.filename,
-        null,
-        sizes.split(",")
+        req?.file?.filename,
+        categories,
+        sizes?.split(",")
       );
 
       const createdRecord = await this.productRepository.addProduct(newProduct);
@@ -99,7 +99,8 @@ export default class ProductController {
 
   async averagePrice(req, res, next) {
     try {
-      const result = await this.productRepository.averageProductPricePerCategory();
+      const result =
+        await this.productRepository.averageProductPricePerCategory();
       res.status(200).send(result);
     } catch (err) {
       console.log(err);

@@ -4,21 +4,41 @@ import { getDB } from "../../config/mongodb.js";
 import mongoose from "mongoose";
 import { productSchemaa } from "./product.schema.js";
 import { reviewSchema } from "./review.schema.js";
+import { categorySchema } from "./category.schema.js";
 
 const ProductModel = mongoose.model("Product", productSchemaa);
 const ReviewModel = mongoose.model("Review", reviewSchema);
+const CategoryModel = mongoose.model("Category", categorySchema);
 
 export default class ProductRepository {
   constructor() {
     this.collection = "products";
   }
 
-  async addProduct(newProduct) {
+  async addProduct(productData) {
     try {
-      const db = getDB();
-      const collection = db.collection(this.collection);
-      await collection.insertOne(newProduct);
-      return newProduct;
+      // const db = getDB();
+      // const collection = db.collection(this.collection);
+      // await collection.insertOne(newProduct);
+      productData.categories = productData.category
+        .split(",")
+        .map((ele) => ele.trim());
+      // console.log(`productData.categories : ${productData.categories}`)
+      console.log(productData);
+      // 1. Add the product
+      const newProduct = new ProductModel(productData);
+      const savedProduct = await newProduct.save();
+
+      const categoryIds = productData.categories.map((id) => new ObjectId(id));
+      // 2.Update the categories
+      await CategoryModel.updateMany(
+        { _id: { $in: categoryIds } },
+        {
+          $push: { product: new ObjectId(savedProduct._id) },
+        }
+      );
+      // console.log(savedProduct);
+      return savedProduct;
     } catch (err) {
       console.log(err);
       throw new ApplicationHandler("Something Went Wrong with dataBase", 500);
