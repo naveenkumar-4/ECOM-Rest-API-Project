@@ -1,6 +1,12 @@
 import { ObjectId } from "mongodb";
 import ApplicationHandler from "../../Error-Handler/applicationError.js";
 import { getDB } from "../../config/mongodb.js";
+import mongoose from "mongoose";
+import { productSchemaa } from "./product.schema.js";
+import { reviewSchema } from "./review.schema.js";
+
+const ProductModel = mongoose.model("Product", productSchemaa);
+const ReviewModel = mongoose.model("Review", reviewSchema);
 
 export default class ProductRepository {
   constructor() {
@@ -119,26 +125,47 @@ export default class ProductRepository {
 
   async rateProducts(userID, productID, rating) {
     try {
-      const db = getDB();
-      const collection = db.collection(this.collection);
-      // 1.removes existing entry
-      await collection.updateOne(
-        {
-          _id: new ObjectId(productID),
-        },
-        {
-          $pull: { ratings: { userID: new ObjectId(userID) } },
-        }
-      );
-      // 2. Add new entry
-      await collection.updateOne(
-        {
-          _id: new ObjectId(productID),
-        },
-        {
-          $push: { ratings: { userID: new ObjectId(userID), rating } },
-        }
-      );
+      // const db = getDB();
+      // const collection = db.collection(this.collection);
+      // // 1.removes existing entry
+      // await collection.updateOne(
+      //   {
+      //     _id: new ObjectId(productID),
+      //   },
+      //   {
+      //     $pull: { ratings: { userID: new ObjectId(userID) } },
+      //   }
+      // );
+      // // 2. Add new entry
+      // await collection.updateOne(
+      //   {
+      //     _id: new ObjectId(productID),
+      //   },
+      //   {
+      //     $push: { ratings: { userID: new ObjectId(userID), rating } },
+      //   }
+      // );
+      // 1. Check if poduct exists
+      const productToUpdate = await ProductModel.findById(productID);
+      if (!productToUpdate) {
+        throw new Error("Product Not found");
+      }
+      // 2.Get the existing review
+      const userReview = await ReviewModel.findOne({
+        product: new ObjectId(productID),
+        user: new ObjectId(userID),
+      });
+      if (userReview) {
+        userReview.rating = rating;
+        await userReview.save();
+      } else {
+        const newReview = new ReviewModel({
+          product: new ObjectId(productID),
+          user: new ObjectId(userID),
+          rating: rating,
+        });
+        newReview.save();
+      }
     } catch (err) {
       console.log(err);
       throw new ApplicationHandler("Something Went Wrong with dataBase", 500);
@@ -148,15 +175,18 @@ export default class ProductRepository {
   async averageProductPricePerCategory() {
     try {
       const db = getDB();
-      return await db.collection(this.collection).aggregate([
-        // Stage1: Get Average price per category
-        {
-          $group: {
-            _id: "$category",
-            averagePrice:{$avg: "$price"}
+      return await db
+        .collection(this.collection)
+        .aggregate([
+          // Stage1: Get Average price per category
+          {
+            $group: {
+              _id: "$category",
+              averagePrice: { $avg: "$price" },
+            },
           },
-        },
-      ]).toArray();
+        ])
+        .toArray();
     } catch (err) {
       console.log(err);
       throw new ApplicationHandler("Something Went Wrong with dataBase", 500);

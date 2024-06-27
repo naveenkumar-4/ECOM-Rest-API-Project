@@ -7,4 +7,10 @@ export const productSchemaa = new mongoose.Schema({
   imageUrl: String,
   category: String,
   sizes: { type: String, enum: ["S", "M", "XL", "XXL"] },
+  reviews: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Review",
+    },
+  ],
 });

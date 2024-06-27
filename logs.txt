@@ -201,3 +201,4 @@
 {"level":"info","message":"/api/users/signup-{\"name\":\"dummy1\",\"email\":\"dummy1@gmail.com\",\"password\":\"Vi@560\",\"type\":\"Customer\"}","service":"request-logging"}
 {"level":"info","message":"/api/users/signup-{\"name\":\"dummy1\",\"email\":\"dummy1@gmail.com\",\"password\":\"Vi@560\",\"type\":\"Customer\"}","service":"request-logging"}
 {"level":"info","message":"User validation failed: password: Password shold be between 8-12 characters and have a special character","service":"request-logging"}
+{"level":"info","message":"/api/products/rate-{\"productID\":\"6662dab4da39b3d196476e8f\",\"rating\":20}","service":"request-logging"}
