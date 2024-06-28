@@ -224,3 +224,13 @@
 {"level":"info","message":"/api/products-{\"name\":\"Amazon Kindle\",\"description\":\"E-book reader by Amazon\",\"price\":15000,\"categories\":\"667cca1deefcfe93261e994d,667cca1deefcfe93261e994b\"}","service":"request-logging"}
 {"level":"info","message":"/api/products-{\"name\":\"Amazon Kindle\",\"description\":\"E-book reader by Amazon\",\"price\":15000,\"categories\":\"667cca1deefcfe93261e994d,667cca1deefcfe93261e994b\"}","service":"request-logging"}
 {"level":"info","message":"/api/products-{\"name\":\"Amazon Kindle\",\"description\":\"E-book reader by Amazon\",\"price\":15000,\"categories\":\"667cca1deefcfe93261e994d,667cca1deefcfe93261e994b\"}","service":"request-logging"}
+{"level":"info","message":"/api/likes-{\"type\":\"Product\",\"id\":\"667d4527e122e25780190888\"}","service":"request-logging"}
+{"level":"info","message":"/api/likes-{\"type\":\"Product\",\"id\":\"667d4527e122e25780190888\"}","service":"request-logging"}
+{"level":"info","message":"/api/likes-{\"type\":\"Product\",\"id\":\"667d4527e122e25780190888\"}","service":"request-logging"}
+{"level":"info","message":"/api/likes-{\"type\":\"Product\",\"id\":\"667d4527e122e25780190888\"}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=667d4527e122e25780190888&type=Product-{\"type\":\"Product\",\"id\":\"667d4527e122e25780190888\"}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=667d4527e122e25780190888&type=Product-{\"type\":\"Product\",\"id\":\"667d4527e122e25780190888\"}","service":"request-logging"}
+{"level":"info","message":"/api/likes-{\"type\":\"Product\",\"id\":\"6662d5e7262ac501147ee78c\"}","service":"request-logging"}
+{"level":"info","message":"/api/likes-{\"type\":\"Product\",\"id\":\"6662d5e7262ac501147ee78c\"}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=667d4527e122e25780190888&type=Product-{\"type\":\"Product\",\"id\":\"6662d5e7262ac501147ee78c\"}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=667d4527e122e25780190888&type=Product-{\"type\":\"Product\",\"id\":\"6662d5e7262ac501147ee78c\"}","service":"request-logging"}

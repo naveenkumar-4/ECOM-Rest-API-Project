@@ -18,6 +18,7 @@ import orderRouter from "./src/features/Order/order.routes.js";
 
 import apiDocs from "./swagger.json" assert { type: "json" };
 import mongoose from "mongoose";
+import likeRouter from "./src/features/Like/like.router.js";
 
 // Create Server
 export const app = express();
@@ -51,6 +52,7 @@ app.use(loggerMiddleware);
 app.use("/api/orders", jwtAuth, orderRouter);
 app.use("/api/products", jwtAuth, ProductRouter);
 app.use("/api/users", userRouter);
+app.use('/api/likes', jwtAuth, likeRouter)
 app.use("/api/cartItems", jwtAuth, cartRouter);
 
 //Default handler
